@@ -36,7 +36,25 @@ Original:
 Add this line (example):
 
 ```html
-<p><strong>Deployed by:</strong> DMI Cohort 2 | Rahul Sharma | Group 4 | Week 1 | 16-01-2026</p>
+<p>## Footer Requirement
+The footer must display:
+- Portfolio version
+- Deploy date
+- Author
+
+## Date Generation
+The deploy date is generated dynamically using JavaScript in **DD Mon YYYY** format.
+
+### Code Snippet
+<footer>
+  © Pravin Mishra Portfolio v1.0 — Deployed on <span id="deployDate"></span> — By Bestman Ugochukwu Afokwalam
+</footer>
+
+<script>
+  const options = { day: '2-digit', month: 'short', year: 'numeric' };
+  document.getElementById("deployDate").textContent =
+    new Date().toLocaleDateString('en-GB', options);
+</script>
 ```
 
 ✅ This proof must be visible in your browser screenshot submission.
