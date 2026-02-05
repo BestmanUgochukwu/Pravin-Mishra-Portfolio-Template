@@ -1142,4 +1142,16 @@ section {
     flex-direction: column;
     text-align: center;
   }
+   footer {
+  font-size: 14px;          /* slightly larger for readability */
+  padding: 12px 20px;       /* spacing around text */
+  margin-top: 20px;         /* space above footer */
+  background-color: #222;   /* dark background for contrast */
+  color: #f1f1f1;           /* light text for readability */
+  text-align: center;       /* center the footer content */
+}
+
+footer span {
+  font-weight: bold;        /* highlight the date */
+}
 }
