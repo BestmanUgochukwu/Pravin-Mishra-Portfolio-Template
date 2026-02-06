@@ -604,8 +604,9 @@
       <div class="footer-bottom">
         <p>© <span id="year"></span> Pravin Mishra. All rights reserved.</p>
         <p>Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
-        <p>Pravin Mishra Portfolio v1.0 — Deployed on 05 Feb 2026 — By Bestman Ugochukwu Afokwalam<p>
-      </div>
+        <p><footer style="text-align:center; padding:15px; font-size:14px; color:#666;">
+             Pravin Mishra Portfolio v1.0 — Deployed on
+             <span id="deployDate"></span> — By Bestman Ugochukwu Afokwalam
 </footer>
 
 
@@ -613,3 +614,11 @@
 </body>
 
 </html>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const date = new Date();
+    const options = { day: '2-digit', month: 'short', year: 'numeric' };
+    document.getElementById('deployDate').textContent =
+      date.toLocaleDateString('en-GB', options);
+  });
+</script>
